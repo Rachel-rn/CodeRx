@@ -42,7 +42,7 @@
 
     
                 .navbar {
-                    position: fixed;
+     position: fixed;
       top: 0;
       width: 100%;
       display: flex;
@@ -68,13 +68,22 @@
 
                 }
                 .right-image {
-                    height: 350px;
-    position: absolute;  /* Positions the image relative to the nearest positioned ancestor */
-    right: 0;  /* Aligns the image to the right side */
-    top: 50%;  /* Positions the image vertically centered */
-    transform: translateY(-50%);  /* Centers the image vertically */
-    max-width: 100%;  /* Ensures the image is responsive */
+  height: 350px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
 }
+@media (max-width: 768px) {
+  .right-image {
+    position: static;
+    display: block;
+    margin: 1rem auto;
+    transform: none;
+    height: auto;
+    width: 80%;
+  }
 
 
 
