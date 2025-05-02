@@ -1,128 +1,147 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home-CodeRx</title>
-        </head>
-        <body>
-            
-            <style>
-                body{
-                    background-color: antiquewhite;
-                    margin-top:0;
-                    padding-top: 80px;
-                    
-                }
-                .container p{
-                    font-family: 'Times New Roman', Times, serif;
-                max-width: 700px;
-                    margin: 1rem auto;
-                    padding: 0;
-                    line-height: 1.6;
-                    color: black;
-                    text-align: center;
-                    
-                    margin-left: 30px;
-                }
-                .container h1{
-                    margin-left: 15rem;
-                 
-                }
-                footer {
-    background-color: #2ecc71;
-    color: black;
-    text-align: center;
-    padding: 1rem;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
-    margin-top: 5rem;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>home-CodeRx</title>
+  <style>
+    body {
+      background-color: antiquewhite;
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Times New Roman', Times, serif;
+    }
 
-    
-                .navbar {
-     position: fixed;
+    /* Navbar */
+    .navbar {
+      position: fixed;
       top: 0;
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 50px;
+      gap: 30px;
       background-color: #2ecc71;
       padding: 1rem;
       z-index: 1000;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-            
-                .navbar a{
-                    text-decoration: none;
-                    font-size: 18px;
-                    color: brown;
-                    font-weight: bold;
-                    
-                    justify-content:center;
-                }
-                .navbar a:hover{
-                    border-bottom: 2px solid burlywood;
-                    color: black;
 
-                }
-                .right-image {
-  height: 350px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  max-width: 100%;
-}
-@media (max-width: 768px) {
-  .right-image {
-    position: static;
-    display: block;
-    margin: 1rem auto;
-    transform: none;
-    height: auto;
-    width: 80%;
-  }
+    .navbar a {
+      text-decoration: none;
+      font-size: 18px;
+      color: brown;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      border-bottom: 2px solid burlywood;
+      color: black;
+    }
+
+    /* Container and text */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .container h1 {
+      margin-bottom: 1rem;
+    }
+
+    .container p {
+      line-height: 1.6;
+      color: black;
+      margin-bottom: 1rem;
+    }
+
+    /* Image */
+    .right-image {
+      height: 350px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: 100%;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2ecc71;
+      color: black;
+      text-align: center;
+      padding: 1rem;
+      width: 100%;
+      font-size: 1rem;
+      margin-top: 5rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .right-image {
+        position: static;
+        display: block;
+        margin: 1rem auto;
+        transform: none;
+        height: auto;
+        width: 80%;
+      }
+
+      .navbar {
+        gap: 10px;
+        font-size: 14px;
+        padding: 0.8rem;
+      }
+
+      .container h1 {
+        font-size: 1.5rem;
+      }
+
+      .container p {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="work.html">Blogs</a>
+    <a href="#">About</a>
+    <a href="#">Contacts</a>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container">
+    <img src="CodeRxlogo.png" alt="CodeRx Logo" width="400" class="right-image" />
+    <h1>Welcome to CodeRx</h1>
+    <p><em>"Prescribing digital solutions for health and beyond!"</em></p>
+    <p>Hi, I am Rachel, a medical lab technologist, medical content creator/writer, and web developer.</p>
+    <p>
+      CodeRx is a platform where you get to experience my medical expertise through tech.
+      "Code" stands for instructions written in a programming language, and "Rx" represents a prescription in medical science — hence, prescribing digital solutions for health and beyond.
+    </p>
+    <p>
+      CodeRx is here to bridge the gap between medical knowledge and the general public by providing clear, accessible content that educates and empowers through articles, videos, and web development.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>Dr. Rachel. &copy; CodeRx 2025 All rights reserved.</footer>
+</body>
+</html>
 
 
 
 
-            </style>
-            
-           <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="work.html">Blogs</a>
-            <a href="#">About</a>
-            <a href="#">Contacts</a>
-          </nav>
-          <div class="container">
-            <div class="homepage">
-                <img src="CodeRxlogo.png" alt="CodeRx Logo" width="400" class="right-image">
 
-                <h1>Welcome to CodeRx </h1>
-                    <p><em> "Prescribing digital solutions for health and beyond!"</em>
-                </p>
-           
-                <p>Hi, I am Rachel, a medical lab technologist, medical content creator/writer, and web developer.</p>
-        
-                <p>CodeRx is a platform where you get to experience my medical expertise through tech. 
-                "Code" stands for instructions written in a programming language, and "Rx" represents a prescription in medical science — hence, prescribing digital solutions for health and beyond.</p>
-        
-                <p>CodeRx is here to bridge the gap between medical knowledge and the general public
-                    by providing clear, accessible content that educates and empowers through
-                    articles, videos, and web development.
-                </p>
-        </div>
-    </div>
-    
-        
-                
-                    <footer>Dr.Rachel.&copy;CodeRx 2025 All rights reserved.</footer>
-                
-            
-       
-   
-        </body>
-        </html>
+
+
+
